@@ -1,0 +1,180 @@
+.recent-things {
+  background: hsl(var(--background));
+  padding: 4rem 0;
+}
+
+.recent-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.recent-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+}
+
+.recent-filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-chip {
+  padding: 0.5rem 1.5rem;
+  background: hsl(var(--background));
+  border: 1px solid hsl(var(--border));
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: hsl(var(--foreground));
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.filter-chip:hover {
+  border-color: hsl(var(--primary));
+}
+
+.filter-chip.active {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  border-color: hsl(var(--foreground));
+}
+
+.all-results-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: hsl(var(--foreground));
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.all-results-button:hover {
+  color: hsl(var(--primary));
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-card {
+  background: hsl(var(--background));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.content-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  background: hsl(var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-emoji {
+  font-size: 4rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-type {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: hsl(var(--primary));
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.card-description,
+.card-subtitle {
+  font-size: 0.95rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.card-date {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin-top: 1rem;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.carousel-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(var(--background));
+  border: 1px solid hsl(var(--border));
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.carousel-button:hover {
+  background: hsl(var(--secondary));
+  border-color: hsl(var(--primary));
+  color: hsl(var(--primary));
+}
+
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recent-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recent-filters {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

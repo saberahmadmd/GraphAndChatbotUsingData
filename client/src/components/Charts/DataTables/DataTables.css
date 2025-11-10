@@ -1,0 +1,73 @@
+.data-tables {
+  background: hsl(var(--background));
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.table-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin-bottom: 1.5rem;
+}
+
+.table-container {
+  overflow-x: auto;
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead {
+  background: hsl(var(--secondary));
+}
+
+.data-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  border-bottom: 2px solid hsl(var(--border));
+  font-size: 0.875rem;
+}
+
+.data-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+  font-size: 0.875rem;
+}
+
+.data-table tbody tr:hover {
+  background: hsl(var(--secondary) / 0.5);
+}
+
+.year-cell {
+  font-weight: 600;
+  color: hsl(var(--primary));
+}
+
+.no-data {
+  text-align: center;
+  padding: 3rem;
+  color: hsl(var(--muted-foreground));
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .data-tables {
+    padding: 1rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+}
