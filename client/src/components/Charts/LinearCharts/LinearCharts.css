@@ -33,18 +33,6 @@
   font-size: 14px;
 }
 
-.recharts-legend-item {
-  font-size: 13px;
-}
-
-.recharts-wrapper .recharts-surface .recharts-layer .recharts-bar-rectangle:hover {
-  opacity: 0.9;
-}
-
-.recharts-cartesian-axis-tick-value {
-  font-size: 12px;
-}
-
 .chart-notes {
   margin-top: 1rem;
   padding: 1rem;
