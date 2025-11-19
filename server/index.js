@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 /**
  * CORS / allowed origins
  *
- * Set FRONTEND_ORIGINS in your environment (comma-separated), e.g.:
+ * Set FRONTEND_ORIGINS in environment (comma-separated), e.g.:
  * FRONTEND_ORIGINS=http://localhost:5173,https://graph-and-chatbot-using-data.vercel.app
  *
  * If FRONTEND_ORIGINS is not set, we default to local dev + your Vercel URL.
